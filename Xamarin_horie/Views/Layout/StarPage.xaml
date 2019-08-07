@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Xamarin_horie.StarPage" Title="Star">
+    <ContentPage.Content>
+        <Grid RowSpacing="0" ColumnSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="2*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+            <BoxView Grid.Row="0" Grid.Column="0" BackgroundColor="#ffaaaa" HeightRequest="100" WidthRequest="100" />
+            <Label Grid.Row="1" Grid.Column="0" BackgroundColor="#aaffaa" HeightRequest="200" WidthRequest="100" />
+            <Button Grid.Row="0" Grid.Column="1" BackgroundColor="#aaaaff" HeightRequest="100" WidthRequest="200" BorderColor="Black" />
+            <ImageButton Source="free_square.png" Grid.Row="1" Grid.Column="1" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

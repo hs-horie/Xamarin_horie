@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Xamarin_horie" x:Class="Xamarin_horie.MainPage">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Xamarin_horie" x:Class="Xamarin_horie.MainPage" Title="メイン">
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
-        <Button x:Name="NextButton" Text="Next page!"/>
+        <StackLayout>
+            <!-- Place new controls here -->
+            <Label Text="画面遷移確認" HorizontalOptions="Center" VerticalOptions="Start" />
+            <Button x:Name="NextButton" Text="Next page!" HorizontalOptions="Center" VerticalOptions="Start"/>
+        </StackLayout>
+        <StackLayout>
+            <Label Text="レイアウト確認" HorizontalOptions="Center" VerticalOptions="Center" />
+            <Button x:Name="LayoutButton" Text="Next page!" HorizontalOptions="Center" VerticalOptions="Center"/>
+        </StackLayout>
     </StackLayout>
 </ContentPage>

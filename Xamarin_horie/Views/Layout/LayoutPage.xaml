@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Xamarin_horie.LayoutPage" Title="各レイアウト">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <!-- Place new controls here -->
+                <Label Text="Grid レイアウト" HorizontalOptions="Center" VerticalOptions="Start" />
+                <Button x:Name="GridButton" Text="Grid!" HorizontalOptions="Center" VerticalOptions="Start"/>
+            </StackLayout>
+            <StackLayout>
+                <!-- Place new controls here -->
+                <Label Text="Stack レイアウト" HorizontalOptions="Center" VerticalOptions="Start" />
+                <Button x:Name="StackButton" Text="Stack!" HorizontalOptions="Center" VerticalOptions="Start"/>
+            </StackLayout>
+            <StackLayout>
+                <!-- Place new controls here -->
+                <Label Text="Absolute レイアウト" HorizontalOptions="Center" VerticalOptions="Start" />
+                <Button x:Name="AbsoluteButton" Text="Absolute!" HorizontalOptions="Center" VerticalOptions="Start"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

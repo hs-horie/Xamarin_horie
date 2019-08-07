@@ -18,19 +18,30 @@ namespace Xamarin_horie
             InitializeComponent();
 
             //クリックイベント作成
+            //遷移確認用イベント
             NextButton.Clicked += NextButton_Clicked;
+
+            //レイアウトページ遷移用イベント
+            LayoutButton.Clicked += LayoutButton_Clicked;
         }
 
-        private void NextButton_Clicked(object sender, EventArgs e)
+        //レイアウトページ遷移用イベント
+        void LayoutButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new LayoutPage());
+        }
+
+        //遷移確認用イベント
+        void NextButton_Clicked(object sender, EventArgs e)
         {
             // 表示画面を入れ替える
-            Application.Current.MainPage = new MyPage();
+            //Application.Current.MainPage = new MyPage();
 
             // モーダル遷移
             //Navigation.PushModalAsync(new MyPage());
 
             // モーダレス遷移
-            //Navigation.PushAsync(new MyPage());
+            Navigation.PushAsync(new MyPage());
         }
     }
 }

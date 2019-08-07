@@ -10,10 +10,10 @@ namespace Xamarin_horie
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            //MainPage = new MainPage();
 
             //モーダレス遷移
-            //MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()
