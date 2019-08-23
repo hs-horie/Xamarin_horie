@@ -19,6 +19,8 @@
     <Folder Include="Views\" />
     <Folder Include="Views\Layout\" />
     <Folder Include="Views\Transition\" />
+    <Folder Include="Views\Layout\Grid\" />
+    <Folder Include="Views\Layout\Absolute\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Views\Transition\MyPage.xaml.cs">
@@ -27,6 +29,10 @@
     </Compile>
     <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Views\Layout\LayoutPage.xaml.cs">
       <DependentUpon>LayoutPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Views\Layout\Grid\GridPage.xaml.cs">
+      <DependentUpon>GridPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

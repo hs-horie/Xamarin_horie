@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Xamarin_horie.AbsolutePage">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <BoxView Color="Blue"
+                     AbsoluteLayout.LayoutFlags="All"
+                     AbsoluteLayout.LayoutBounds="0.5,0.5,0.25,0.25"/>
+            <BoxView Color="Red"
+                     AbsoluteLayout.LayoutFlags="All"
+                     AbsoluteLayout.LayoutBounds="0.5,0,0.25,0.25"/>
+            <BoxView Color="Green"
+                     AbsoluteLayout.LayoutFlags="All"
+                     AbsoluteLayout.LayoutBounds="0,1.0,0.5,0.25"/>
+            <Label Text="重なる確認"
+                   BackgroundColor="Yellow"
+                   Opacity="0.5"
+                     AbsoluteLayout.LayoutFlags="All"
+                     AbsoluteLayout.LayoutBounds="0.5,1.0,0.5,0.25"/>
+        </AbsoluteLayout>   
+    </ContentPage.Content>
+</ContentPage>

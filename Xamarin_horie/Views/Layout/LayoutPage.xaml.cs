@@ -12,6 +12,12 @@ namespace Xamarin_horie
             InitializeComponent();
 
             GridButton.Clicked += GridButton_Clicked;
+            AbsoluteButton.Clicked += AbsoluteButton_Clicked;
+        }
+
+        void AbsoluteButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new AbsolutePage());
         }
 
         void GridButton_Clicked(object sender, EventArgs e)
